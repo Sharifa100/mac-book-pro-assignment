@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Internal style  -->
+    
+
+    <style>
+      button:hover{ background-color: rgb(23, 8, 53);
+      color: white;}
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="container overflow-hidden mt-4">
+      <div class="row gx-5">
+          <!-- product image div start from here -->
+          <div class="col-lg-5 col-12 col-md-4">
+              <div class="p-3 border bg-light">
+                  <img src="images/mac.png" alt="" class="img-fluid">
+              </div>
+          </div>
+          <!-- product image div end  here-->
+
+          <div class="col-lg-7 col-12 col-md-8">
+              <!-- product title and description start from here -->
+              <div class="p-3 border bg-light mb-5">
+                  <h1>Customize your Blue 24-inch iMac With Apple M1 chip</h1>
+                  <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                      16-core Neural Engine
+                      8GB unified memory
+                      1TB SSD storage
+                      Two Thunderbolt / USB 4 ports
+                      Magic Mouse</p>
+              </div>
+              <!-- product title and description end here -->
+
+              <!-- memory Button start from here-->
+              <h4 class="mt-4">Memory</h4>
+              <button id="memory-8">8GB Unified Memory</button>
+              <button id="memory-16">16GB Unified Memory</button>
+
+              <!-- memory Button end here-->
+
+              <!-- storage Button start from here-->
+              <h4 class="mt-5">Storage</h4>
+              <button id="storage256">256GB SSD Storage</button>
+              <button id="storage512">512GB SSD Storage</button>
+              <button id="storage1tb">1TB SSD Storage</button>
+              <!-- storage Button end here -->
+
+              <!-- Delivery Button start from here -->
+              <h4 class="mt-5">Choose your delivery Option</h4>
+              <button id="deliveryfree">Friday, Aug 25 Free Prime Delivery</button>
+              <button id="paidDelivery">Friday, Aug 21 Delivery charge $20</button>
+              <!-- Delivery Button end here -->
+
+
+              <!-- all price calculation start from here-->
+              <div class="row mt-5">
+                  <div class="col-lg-8 col-12 mt-4">
+                      <div class="d-flex justify-content-between">
+                          <h5>Best Price</h5>
+                          <h5>$<span id="best-price">1299</span></h5>
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between">
+                          <h5>Extra Memory Cost</h5>
+                          <h5>$<span id="extra-memory">00</span></h5>
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between">
+                          <h5>Extra Storage Cost</h5>
+                          <h5>$<span id="extra-storage">00</span></h5>
+                      </div>
+                      <hr>
+                      <div class="d-flex justify-content-between">
+                          <h5>Delivery Charge</h5>
+                          <h5>$<span id="extra-delivery">00</span></h5>
+                      </div>
+                      <hr style="border-bottom: 5px solid rgb(0, 0, 0);">
+                      <div class="d-flex justify-content-between">
+                          <h4>Total Prize</h4>
+                          <h4>$<span id="total-price">1299</span></h4>
+                      </div>
+                      <!-- all price calculation start from here-->
+
+                      <!-- pomo code input and apply button div here -->
+                      <div class="mt-5 mb-4">
+                          <h5>Add Pomo Code</h5>
+                          <input id="pomocode" type="text" placeholder="type your pomocode">
+                          <button id="apply-button" class="btn btn-danger">Apply</button>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+      <!-- Total ammount start here -->
+      <h2 class="d-flex justify-content-center">Totla:$<span id="totalAmmount">1299</span></h2>
+      <hr>
+  </div>
+
+
+  <!-- javascript link here -->
+  <script src="js/shopping.js"></script>
+</body>
+
+</html>
